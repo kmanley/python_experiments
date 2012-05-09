@@ -8,7 +8,7 @@ test_3: 20.86273 msecs
 """
 import sys
 import time
-from bw.util.decorators import timed
+from decorators import timed
 import ujson
 import copy
 import cPickle as pickle

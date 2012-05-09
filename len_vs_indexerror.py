@@ -15,7 +15,6 @@ Otherwise, test length
 """
 #import sys
 #import time
-#from bw.util.decorators import timed
 #import ujson
 #import copy
 #import cPickle as pickle

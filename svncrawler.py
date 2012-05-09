@@ -1,14 +1,14 @@
 import re
 import argparse
 import urlparse
-import bw.util.http as bw_http
-import bw.util.logtools as logtools
-log = logtools.getLogger()
+import http
+import logging
+log = logging.getLogger()
 import licensed_code.veltro.utils.xmltools as xmltools
 
 class SvnCrawler(object):
     def __init__(self, *args, **kwargs):
-        self.http = bw_http.HTTPClient(*args, **kwargs)
+        self.http = http.HTTPClient(*args, **kwargs)
         self.queue = []
 
     def _crawl_queue(self):
@@ -16,7 +16,7 @@ class SvnCrawler(object):
         log.info("getting %s (qlen=%d)" % (url, len(self.queue)))
         try:
             data = self.http.get(url)
-        except bw_http.Error, e:
+        except http.Error, e:
             if e.httpcode == 403:
                 log.warning("access denied for %s; skipping it..." % url)
                 return 

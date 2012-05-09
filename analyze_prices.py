@@ -5,7 +5,7 @@ import os.path
 import datetime
 import pprint
 #import urllib2
-from bw.util.http import HTTPClient
+from http import HTTPClient
 #import decimal
 import StringIO
 import time

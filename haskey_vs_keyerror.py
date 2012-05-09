@@ -20,7 +20,7 @@ Conclusion: if you are pretty sure the key will be there, use try/except KeyErro
 """
 import sys
 import time
-from bw.util.decorators import timed
+from decorators import timed
 import ujson
 import copy
 import cPickle as pickle

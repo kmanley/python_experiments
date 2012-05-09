@@ -1,7 +1,7 @@
 # The python docs for heapq, in the example priority queue, shows using itertools.counter. I was curious why...is it faster?
 # Conclusion: no it's not faster...the straightforward c+=1 is faster
 
-from bw.util.decorators import timed
+from decorators import timed
 import itertools
 
 MAX = 10000000

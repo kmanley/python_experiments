@@ -10,7 +10,7 @@ test_4: 228.06894 msecs # zlib is very slow
 """
 import sys
 import time
-from bw.util.decorators import timed
+from decorators import timed
 import binascii, base64
 import ujson
 import copy

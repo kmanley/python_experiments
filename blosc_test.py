@@ -2,7 +2,7 @@
 Conclusions: blosc doesn't seem to compress very well, though it is fast
 """
 import sys, blosc, hashlib, random, zlib, sys, cPickle, base64, bz2
-from bw.util.decorators import timed
+from decorators import timed
 
 D = {}
 

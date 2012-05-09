@@ -9,7 +9,7 @@ test_time: min=1329.04843 msec, max=1329.04843 msec, avg=1329.04843 msec, numcal
 """
 
 import time
-from bw.util.decorators import timed
+from decorators import timed
 
 ITERS = 10000000
 

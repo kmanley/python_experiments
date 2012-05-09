@@ -28,7 +28,7 @@ x2
 """
 import sys
 import time
-from bw.util.decorators import timed
+from decorators import timed
 import ujson
 import cPickle as pickle
 

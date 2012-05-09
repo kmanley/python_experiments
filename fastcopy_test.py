@@ -5,7 +5,7 @@ Not everything can be marshalled
 """
 import sys
 import time
-from bw.util.decorators import timed
+from decorators import timed
 import ujson
 import copy
 import cPickle as pickle

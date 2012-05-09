@@ -11,7 +11,7 @@ Data size
 """
 import sys
 import time
-from bw.util.decorators import timed
+from decorators import timed
 import binascii, base64
 import ujson
 import copy

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
  
 from BeautifulSoup import BeautifulSoup
-from bw.util.http import HTTPClient
+from http import HTTPClient
 #import urllib2
 #import random
 #import re
